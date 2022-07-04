@@ -5,6 +5,7 @@ alias 4='tree -L 4'
 
 alias c='clear'
 alias e='eog'
+alias f='fzf'
 alias g='gvim'
 alias h='history 50'
 alias l='ls -l'
