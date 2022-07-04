@@ -1,0 +1,5 @@
+alias vncstart='vncserver -geometry 1920x1440 -depth 24'
+alias vncstartm='vncserver -geometry 1920x1080 -depth 24'
+alias vncstartf='vncserver -geometry 2550x1550 -depth 24'
+alias vncsee='vncviewer -Shared cassidy:1'
+alias vncstop='vncserver -kill :1'

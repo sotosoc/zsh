@@ -27,19 +27,24 @@ source $ZSH/oh-my-zsh.sh
 #          plugins, and themes.
 #    NOTE: For a full list of active aliases, run `alias`.
 #-------------------------------------------------------------------------------
+source "$HOME/repos/zsh/history.zsh"
 source "$HOME/repos/zsh/path.zsh"
+source "$HOME/repos/zsh/prompt.zsh"
 source "$HOME/repos/zsh/settings.zsh"
 
 # aliases
-source "$HOME/repos/zsh/colon_commands.zsh"
+source "$HOME/repos/zsh/commands.zsh" # This is first. Others should override.
+source "$HOME/repos/zsh/command_options.zsh"
 
-source "$HOME/repos/zsh/alias.zsh"
-source "$HOME/repos/zsh/commands.zsh"
+source "$HOME/repos/zsh/colon_commands.zsh"
 source "$HOME/repos/zsh/dot_commands.zsh"
-source "$HOME/repos/zsh/options.zsh" # DONE
+source "$HOME/repos/zsh/git_commands.zsh"
+source "$HOME/repos/zsh/one_letter_commands.zsh"
+source "$HOME/repos/zsh/vim_commands.zsh"
+source "$HOME/repos/zsh/vnc_commands.zsh"
+
 source "$HOME/repos/zsh/functions.zsh"
 
-source "$HOME/repos/zsh/prompt"
 
 clear
 echo "SOURCED: ~/.zshrc"
