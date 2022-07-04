@@ -1,2 +1,2 @@
 # zsh
-My zsh settings, aliases, functions, ...
+My zsh settings, aliases, functions, ... for WORK and HOME.
