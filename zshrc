@@ -1,6 +1,8 @@
-unset GEM_HOME
-unset GEM_PATH
+export GEM_HOME="$HOME/.gem"
+export GEM_PATH="$GEM_HOME"
+
 unset VIMRUNTIME
+eval `ruby.env`
 
 #---------------------------------------------------------------------
 # PURPOSE: export variables
