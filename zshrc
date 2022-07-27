@@ -2,18 +2,12 @@ export GEM_HOME="$HOME/.gem"
 export GEM_PATH="$GEM_HOME"
 
 unset VIMRUNTIME
-eval `ruby.env`
+#eval `ruby.env`
 
 #---------------------------------------------------------------------
 # PURPOSE: export variables
 #---------------------------------------------------------------------
-source "$HOME/repos/zsh/export.zsh"
-
-#---------------------------------------------------------------------
-# Purpose: Set name of the theme to load
-#          See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#---------------------------------------------------------------------
-ZSH_THEME="jonathan" # <<<
+source $HOME/repos/zsh/export.zsh
 
 #-------------------------------------------------------------------------------
 # PURPOSE: Which plugins would you like to load?
@@ -47,6 +41,13 @@ source "$HOME/repos/zsh/vnc_commands.zsh"
 
 source "$HOME/repos/zsh/functions.zsh"
 
+#---------------------------------------------------------------------
+# Purpose: Set name of the theme to load
+#          See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#---------------------------------------------------------------------
+#ZSH_THEME="jonathan"
+#ZSH_THEME="rkj"
+#ZSH_THEME="robbyrussell"
 
-clear
+#clear
 echo "SOURCED: ~/.zshrc"

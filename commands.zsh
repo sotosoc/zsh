@@ -54,6 +54,9 @@ alias grlri='grep -ilr'
 alias grril='grep -ilr'
 alias grrli='grep -ilr'
 
+alias hgr='history | grep'
+alias hgrep='history | grep'
+
 #-------------------------------------------------------------------------------
 # PURPOSE: set or unset history file
 #-------------------------------------------------------------------------------

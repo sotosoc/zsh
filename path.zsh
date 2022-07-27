@@ -1,7 +1,8 @@
 #---------------------------------------------------------------------
 # Purpose: Set PATH
 #---------------------------------------------------------------------
-PATH="/snap/bin"
+PATH="."
+PATH="$PATH:/snap/bin"
 PATH="$PATH:/bin"
 PATH="$PATH:/usr/bin"
 PATH="$PATH:/usr/local/bin"

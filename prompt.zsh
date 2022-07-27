@@ -132,14 +132,15 @@ fi
 # ${PR_CYAN}${PR_HBAR}${PR_NO_COLOR} '
 
 # Finally, the prompt.
+# OS: ${PR_RED}[${PR_WHITE}%m${PR_RED}]
 PROMPT='${PR_SET_CHARSET}${PR_STITLE}${(e)PR_TITLEBAR}\
 
-${PR_RED}[${PR_GREY}%(!.%SROOT%s.%n)${PR_RED}]\
-${PR_RED}[${PR_GREY}%m${PR_RED}]\
+${PR_RED}[${PR_WHITE}%(!.%SROOT%s.%n)${PR_RED}]\
+${PR_RED}[${PR_WHITE}$(basename ${SHELL})${PR_RED}]\
 ${PR_RED}[$(git_prompt_info)$(git_prompt_status)${PR_RED}]\
-${PR_GREY} %${PR_PWDLEN}<...<%~%<<${PR_GREY}$(ruby_prompt_info)\
-
-${PR_GREY}${PR_DBL_COLON} ${PR_BLUE}'
+${PR_WHITE} %${PR_PWDLEN}<...<%~%<<${PR_WHITE}$(ruby_prompt_info)
+\
+${PR_WHITE}${PR_DBL_COLON} ${PR_BLUE}'
 
 # display exitcode on the right when > 0
 return_code="%(?..%{$fg[red]%}%? ↵ %{$reset_color%})"
